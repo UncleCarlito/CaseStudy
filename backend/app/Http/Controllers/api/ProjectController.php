@@ -42,9 +42,13 @@ class ProjectController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(project $project)
+    public function show(int $id)
     {
-        //
+        $project = project::find($id);
+        if (!$project) {
+            response()->json(["error" => "Project not found"]);
+        }
+        return response()->json(["data" => $project]);
     }
 
     /**
