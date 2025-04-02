@@ -1,0 +1,47 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.projectlist-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 1rem;
+  text-align: center;
+}
+
+.projectlist-container .projectlist {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.projectlist-container .projectlist .project-container {
+  border: 3px solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: start;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.projectlist-container .projectlist .project-container:hover {
+  border: 3px solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #eee;
+}
+
+.projectlist-container .projectlist .project-container .text {
+  font-family: Poppins;
+  font-size: 1.5rem;
+}
+
+.projectlist-container .projectlist .project-container .text p:nth-child(2) {
+  font-size: 1rem;
+}

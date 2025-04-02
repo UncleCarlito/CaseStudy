@@ -1,0 +1,89 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.projectdetail-container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.projectdetail-container .projectdetail {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 0 3rem;
+  text-align: center;
+  width: 60%;
+}
+
+.projectdetail-container .projectdetail .project {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 1rem;
+  text-align: center;
+  text-align: start;
+  margin-bottom: 3rem;
+}
+
+.projectdetail-container .projectdetail .project .text div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.projectdetail-container .projectdetail .project .text div input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.projectdetail-container .projectdetail .buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.projectdetail-container .projectdetail .buttons .options {
+  padding: 1rem;
+  border-radius: 1px solid black;
+  border-radius: 1rem;
+}
+
+.projectdetail-container .projectdetail .buttons .edit {
+  background-color: #e3bd94;
+}
+.projectdetail-container .projectdetail .buttons .edit:hover {
+  background-color: #e47906;
+}
+
+.projectdetail-container .projectdetail .buttons .delete {
+  background-color: #d29087;
+}
+.projectdetail-container .projectdetail .buttons .delete:hover {
+  background-color: #d33c12;
+}
+
+.projectdetail-container .projectdetail .buttons .done {
+  background-color: #a5b68d;
+}
+.projectdetail-container .projectdetail .buttons .done:hover {
+  background-color: #73b912;
+}
+
+.projectdetail-container .projectdetail .task {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.projectdetail-container .projectdetail .task p {
+  text-align: center;
+}
+
+.projectdetail-container .projectdetail .task p:nth-child(2) {
+  flex-grow: 1;
+}
